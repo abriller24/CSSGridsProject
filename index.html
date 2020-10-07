@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSSGrids Doodles</title>
+	<link rel="stylesheet" href="https://use.typekit.net/lqy0hwl.css">
+
+	<style>
+		li{
+			margin: 5px;
+			padding: 5px;
+			
+		}
+		body{
+			background-image: url("Photos/halloweenbackground.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.grid{
+			display:grid;
+			grid-template-columns:1fr 2fr 1fr;
+			grid-auto-rows:minmax(100px, auto);
+			grid-gap:10px;
+		}
+		.header{
+			grid-column: 2/3;
+			font-family: professor-minty, sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 60px;
+			color: #7221A4;
+			text-align: center;
+		}
+		
+		.nav{
+			grid-column: 1;
+			grid-row: 2/5;
+			font-size: 20px;
+		}
+		
+		.left{
+			grid-row: 2/5;
+			grid-column: 2/3;
+			font-size: 20px;
+			background-color:#F9964F;
+			color: #010101
+			
+		}
+		
+		.right{
+			width: 100%;
+			grid-column: 3;
+			grid-row: 2/5;
+		}
+		
+		.footer{
+			grid-column: 1/4;
+			grid-row: 5;
+			text-align: center;
+			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+			
+		}
+	
+		
+	</style>
+</head>
+
+<body>
+	<div class="grid">
+		<div class="header">Briller's Doodles</div>
+		<div class="nav"><ul>
+			
+			<li>About</li>
+			
+			<li>Browse</li>
+			
+			<li>Contact</li>
+			
+		</ul>
+		</div>
+		<div class="left"><p>Welcome to Briller's Spooky Doodles. You can read a little about how I started at the "About" tab, view some art work at the "Browse" tab, and contact me with questions about prints and personal pieces. Have a look around and hope to hear from you soon! &#128516;</p></div>
+		<div class="right">
+		<img src="Photos/jackskellington.JPG" height="300" width="194" alt="jack skellington drawing"></div>
+		<div class="footer"><p>Contact me at abriller5180@gmail.com</p><p>Briller's Doodles&#8482;</p></div>
+	
+	</div>
+</body>
+</html>
